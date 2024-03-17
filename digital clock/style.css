@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, rgb(247, 188, 242) 50%, rgb(208, 226, 230) 60%);
+    /* background: rgb(237,192,212); */
+    /* background: rgb(36,0,34); */
+    /* background: linear-gradient(90deg, rgba(36,0,34,0) 0%, rgba(121,9,107,1) 0%, rgba(9,121,116,0.6782912994299282) 100%);  */
+    /* background: radial-gradient(circle, rgba(237,192,212,1) 0%, rgba(188,209,233,1) 100%);  */
+}
+
+.container {
+    height: 50px;
+    margin-top: 10%;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+/* p{margin-top: 40%;} */
+.container h1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    /* font-family: 'poppins', sans-serif; */
+    font-size: 22px;
+    margin-top: 20px;
+    /* color: rgb(0, 0, 0); */
+
+
+
+}
+
+.clock {
+    width: 400px;
+    height: 150px;
+    margin-left: 37%;
+    background-color: rgba(0, 0, 0, 0.8);
+    background: transparent;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    backdrop-filter: blur(20px);
+}
+
+.clock div {
+    display: flex;
+
+    padding: 10px;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    justify-content: space-around;
+}
+
+.clock div h1 {
+
+    margin-left: -30px;
+    margin-top: 40px;
+    /* color: rgb(194, 183, 183); */
+
+}
+
+
+.clock div h2 {
+    align-items: center;
+    margin-left: -40px;
+    font-weight: 800;
+    font-size: 25px;
+    margin-top: 40px;
+    color: rgb(3, 3, 3);
+}
+
+
+
+.clock .des {
+    display: flex;
+    justify-content: space-around;
+    margin-left: -25px;
+    margin-top: -15px;
+}
+
+/* #50434F */
+.des :last-child {
+    margin-left: 15px;
+}
+
+.des :nth-child(2) {
+    margin-left: 10px;
+}
+
+.des span {
+    color: rgb(3, 3, 3);
+    text-transform: capitalize;
+}
+
+p{
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 230px;
+    font-weight: bold;
+    font-size: 11px;
+    opacity: 0.3;
+    font-family: 'poppins',sans-serif;
+    letter-spacing: 3px;
+}
+
+/* smaller divices */
+@media only screen and (max-width: 600px){
+    .clock{
+        width: 300px;
+        margin-left: 43px;
+    }
+}
